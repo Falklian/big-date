@@ -30,7 +30,6 @@ export const initialState = {
 };
 
 export const updateState = (event, previousState) => {
-    console.log(previousState);
     switch(event.type) {
         case 'SUCCEDED':
             const parts = moment().format(momentFormat).split(/\s+/);

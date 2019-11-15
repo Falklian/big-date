@@ -20,10 +20,10 @@ export const init = (dispatch) => {
 
 export const initialState = {
     date: {
-        dayOfWeek: 'TUESDAY',
+        dayOfWeek: 'SATURDAY',
         month: 'JANUARY',
-        dayOfMonth: '11',
-        year: '1983',
+        dayOfMonth: '01',
+        year: '2000',
         time: '12:00',
         amPm: 'AM'
     }

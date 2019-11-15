@@ -6,14 +6,14 @@ const momentFormat = 'dddd MMMM DD YYYY h:mm A';
 //export const command = "date '+%A %B %d %Y %l:%M %p'";
 export const command = (dispatch) => {
     dispatch({
-        type: 'SUCCEDED',
+        type: 'SUCCEEDED',
         data: moment().format(momentFormat)
     });
 }
 
 export const init = (dispatch) => {
     dispatch({
-        type: 'SUCCEDED',
+        type: 'SUCCEEDED',
         data: moment().format(momentFormat)
     });
 }
@@ -31,7 +31,7 @@ export const initialState = {
 
 export const updateState = (event, previousState) => {
     switch(event.type) {
-        case 'SUCCEDED':
+        case 'SUCCEEDED':
             const parts = moment().format(momentFormat).split(/\s+/);
             const date = {
                 dayOfWeek: parts[0].toUpperCase(),
